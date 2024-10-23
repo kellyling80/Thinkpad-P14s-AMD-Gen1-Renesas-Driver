@@ -1,10 +1,15 @@
-Firmware and Driver for Renesas USB xHCI Compliant Host Controller Lenovo Thinkpad P14s AMD Gen-1
+## Renesas USB 3.0 Firrmware for Lenovo P14s AMD Gen-1
 
-This is a firmware needed for the missing P14s USB3.0 Renesas chip. Without this firmware, your webcam will not be detected and function.
-Lenovo somehow screwed up the BIOS updates and missed out on this firmware somewhere from v1.17 onwards, so you will need this firmware for Windows
+**The issue:** After BIOS 1.3x , Lenovo P14s / T14 AMD Gen-1 laptops will have their webcams disabled (in Windows 10/11)
 
-Original site : https://www.startech.com/en-nz/cards-adapters/pexusb3s44v
+**The cause:** Firmware for Renesas UPD72002 chip which runs the internal webcam is not loaded/missing from the BIOS update
 
-HardwareIDs: PCI\VEN_1912&DEV_0015 ; PCI\VEN_1912&DEV_0015&SUBSYS_00000000&REV_02
+**The solution:** Users need to install the firmware manually
+
+Lenovo support site for both laptop models does not have the firmware. Therefore, you will have to use a 3rd party firmware updater to write to the rom. 
+
+1.  To check if you have this problem, check the Device Manager in Windows. You should have a yellow exclamation mark next to the "USB 3.0 extensible USB...'
+2.  Download the Firmware and read the Installation method pdf
+3.  Original site of firmware and driver : https://www.startech.com/en-nz/cards-adapters/pexusb3s44v HardwareIDs: PCI\\VEN_1912&DEV_0015 ; PCI\\VEN_1912&DEV_0015&SUBSYS_00000000&REV_02
 
 
