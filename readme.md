@@ -5,3 +5,6 @@ Lenovo somehow screwed up the BIOS updates and missed out on this firmware somew
 
 Original site : https://www.startech.com/en-nz/cards-adapters/pexusb3s44v
 
+HardwareIDs: PCI\VEN_1912&DEV_0015 ; PCI\VEN_1912&DEV_0015&SUBSYS_00000000&REV_02
+
+
